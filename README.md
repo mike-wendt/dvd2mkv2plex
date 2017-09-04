@@ -108,15 +108,15 @@ By default MKV files are named from the name of the DVD when using `0copy.sh` or
 
 #### Single Title DVDs
 
-* DVD NAME - `RAILWAY_JOURNEYS_5`
-* ISO NAME - `RAILWAY_JOURNESY_5.iso`
-* MKV NAME - `Railway Journeys 5.mkv`
+* DVD Name - `RAILWAY_JOURNEYS_5`
+* ISO Name - `RAILWAY_JOURNESY_5.iso`
+* MKV Name - `Railway Journeys 5.mkv`
 
 #### Multi Title DVDs
 
-* DVD NAME - `WORLDS_GREATEST_RAILROADS_2`
-* ISO NAME - `WORLDS_GREATEST_RAILROADS_2.iso`
-* MKV NAMES:
+* DVD Name - `WORLDS_GREATEST_RAILROADS_2`
+* ISO Name - `WORLDS_GREATEST_RAILROADS_2.iso`
+* MKV Names:
 ```
 Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-part1.mkv
 Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-part2.mkv
@@ -130,9 +130,9 @@ You can edit the config var `PREFIX` in `1rip.sh` to change how files with multi
 
 #### Setting `PREFIX="-Scene-"`
 
-* DVD NAME - `WORLDS_GREATEST_RAILROADS_2`
-* ISO NAME - `WORLDS_GREATEST_RAILROADS_2.iso`
-* MKV NAMES:
+* DVD Name - `WORLDS_GREATEST_RAILROADS_2`
+* ISO Name - `WORLDS_GREATEST_RAILROADS_2.iso`
+* MKV Names:
 ```
 Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-Scene-1.mkv
 Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-Scene-2.mkv
@@ -142,9 +142,9 @@ Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-Scene-4.mkv
 
 #### Setting `PREFIX="-s00e0"`
 
-* DVD NAME - `WORLDS_GREATEST_RAILROADS_2`
-* ISO NAME - `WORLDS_GREATEST_RAILROADS_2.iso`
-* MKV NAMES:
+* DVD Name - `WORLDS_GREATEST_RAILROADS_2`
+* ISO Name - `WORLDS_GREATEST_RAILROADS_2.iso`
+* MKV Names:
 ```
 Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-s00e01.mkv
 Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-s00e02.mkv
