@@ -24,8 +24,17 @@ Tested with Debian 8.9, should work with Ubuntu 14.04+ but YMMV
 sudo apt-get update
 sudo apt-get install -y eject pv
 ```
+## Config
 
-## Setup
+All three scripts have config vars at the beginning of each script that need to be set for your environment before using
+
+### Notable Config Vars
+
+* `1rip.sh`
+  * `MINIMUM_SECS_TO_SAVE` - minimum number of seconds a title should be to rip
+  * `PREFIX` - controls naming of multiple titles, see [File Naming](#file-naming)
+  
+## Usage
 
 Helpful tips:
 * It is a good idea to run the following commands in `screen` in case there is a disconnect
@@ -81,16 +90,16 @@ Only one instance of this script needs to run, be sure to run this in `screen` a
 ./1rip.sh 2>&1 | tee -a rip.log
 ```
 
-## Usage
+### Loading DVDs
 
-### Using `0copy.sh`
+#### Using `0copy.sh`
 
 1. Insert DVD to copy in drive and close
 2. Monitor copy script for progress of copy
 3. Remove copied DVD when disk is ejected
 4. Continue with **Step 1**
 
-### Using `0ask-name-copy.sh`
+#### Using `0ask-name-copy.sh`
 
 1. Insert DVD to copy in drive and close
 2. Confirm name for DVD or change to allow copy to proceed
