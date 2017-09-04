@@ -11,7 +11,7 @@ High-level process:
 
 There are two main scripts:
 
-1. `0copy.sh` or `0ask-name-copy.sh`
+1. `0copy.sh` or `0ask-name-copy.sh` - copies DVDs creating ISOs for ripping, auto ejecting DVDs when finished
 2. `1rip.sh` - rips titles from ISO creating and saving MKVs into Plex Library
 
 ## Prereqs
@@ -39,7 +39,7 @@ Decide on which method to use: **automatic copy** or **confirmation copy**
 
 * **automatic copy** uses `0copy.sh` and uses the DVD's name as a way to check if the DVD has been copied & what name to save the ISO as
 * **confirmation copy** uses `0ask-name-copy.sh` and will prompt the user to confirm the DVD name that was read or enter a new one
- * This is helpful when you have a lot of home movies or other non standard DVDs with the same name
+  * This is helpful when you have a lot of home movies or other non standard DVDs with the same name
 
 #### Determine Drives
 
