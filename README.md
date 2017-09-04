@@ -98,6 +98,60 @@ Only one instance of this script needs to run, be sure to run this in `screen` a
 4. Remove copied DVD when disk is ejected 
 5. Continue with **Step 1**
 
+## File Naming
+
+By default MKV files are named from the name of the DVD when using `0copy.sh` or the confirmed/entered name when using `0ask-name-copy.sh` 
+
+**NOTE:** Naming for MKV files/folders remove chars `-_` and replace them with ` ` as well as capitalizing the first letter of every word
+
+### Example #1 - Default Naming
+
+#### Single Title DVDs
+
+* DVD NAME - `RAILWAY_JOURNEYS_5`
+* ISO NAME - `RAILWAY_JOURNESY_5.iso`
+* MKV NAME - `Railway Journeys 5.mkv`
+
+#### Multi Title DVDs
+
+* DVD NAME - `WORLDS_GREATEST_RAILROADS_2`
+* ISO NAME - `WORLDS_GREATEST_RAILROADS_2.iso`
+* MKV NAMES:
+```
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-part1.mkv
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-part2.mkv
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-part3.mkv
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-part4.mkv
+```
+
+### Example #2 - Custom Prefix for Multi Title DVDs
+
+You can edit the config var `PREFIX` in `1rip.sh` to change how files with multiple titles are named
+
+#### Setting `PREFIX="-Scene-"`
+
+* DVD NAME - `WORLDS_GREATEST_RAILROADS_2`
+* ISO NAME - `WORLDS_GREATEST_RAILROADS_2.iso`
+* MKV NAMES:
+```
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-Scene-1.mkv
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-Scene-2.mkv
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-Scene-3.mkv
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-Scene-4.mkv
+```
+
+#### Setting `PREFIX="-s00e0"`
+
+* DVD NAME - `WORLDS_GREATEST_RAILROADS_2`
+* ISO NAME - `WORLDS_GREATEST_RAILROADS_2.iso`
+* MKV NAMES:
+```
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-s00e01.mkv
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-s00e02.mkv
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-s00e03.mkv
+Worlds Greatest Railroads 2/Worlds Greatest Railroads 2-s00e04.mkv
+```
+
 ## Help & Issues
 
 Please file and issue if you encounter any errors or would like additional features. Stars are always welcome!
