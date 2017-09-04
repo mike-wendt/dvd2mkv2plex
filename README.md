@@ -16,16 +16,14 @@ There are two main scripts:
 
 ## Prereqs
 
-Tested with Debian 8.9, should work with Ubuntu 14.04+
+Tested with Debian 8.9, should work with Ubuntu 14.04+ but YMMV
 
-Install some useful tools:
-
+1. Install MakeMKV for linux: http://www.makemkv.com/forum2/viewtopic.php?f=3&t=224&sid=a9796012caafc26c5e825afaa60647b6
+2. Install tools used by the scripts:
 ```
 sudo apt-get update
-sudo apt-get install eject pv
+sudo apt-get install -y eject pv
 ```
-
-Install MakeMKV for linux: http://www.makemkv.com/forum2/viewtopic.php?f=3&t=224&sid=a9796012caafc26c5e825afaa60647b6
 
 ## Setup
 
@@ -53,14 +51,12 @@ ls /dev/sr*
 
 #### Single DVD System
 
-**automatic copy**
-
+***automatic copy***
 ```
 ./0copy.sh 0 2>&1 | tee -a copy-drive0.log
 ```
 
-**confirmation copy**
-
+***confirmation copy***
 ```
 ./0ask-name-copy.sh 0 2>&1 | tee -a copy-drive0.log
 ```
